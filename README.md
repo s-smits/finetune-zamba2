@@ -1,6 +1,6 @@
 # finetune-zamba2
 
-This repository contains tools and scripts for fine-tuning the Zamba2-1.2B language model. The implementation supports both single and multi-GPU training with automatic learning rate optimization.
+This repository contains tools and scripts for fine-tuning Zamba2-1.2B-Instruct with a specific dataset. The implementation supports both single and multi-GPU training with automatic learning rate optimization.
 
 ## Requirements
 
@@ -15,7 +15,7 @@ This repository contains tools and scripts for fine-tuning the Zamba2-1.2B langu
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/finetune-zamba2.git
+git clone https://github.com/s-smits/finetune-zamba2.git
 cd finetune-zamba2
 ```
 
