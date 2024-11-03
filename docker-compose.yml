@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  zamba2-finetune:
+    build: .
+    volumes:
+      - ./:/workspace/finetune-zamba2
+      - model-cache:/root/.cache/huggingface  # Persist model downloads
+    environment:
+      - HF_TOKEN=${HF_TOKEN}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    tty: true
+    stdin_open: true
+
+volumes:
+  model-cache: 
