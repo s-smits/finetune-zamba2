@@ -1,4 +1,4 @@
- import torch
+import torch
 from torch.utils.data import Dataset
 from transformers import PreTrainedTokenizer
 from typing import List, Dict

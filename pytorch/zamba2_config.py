@@ -1,3 +1,5 @@
+import Zamba2Config as PretrainedConfig
+
 class Zamba2Config(PretrainedConfig):
     r"""
     This is the configuration class to store the configuration of a [`Zamba2Model`]. It is used to instantiate a

@@ -1,3 +1,10 @@
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from typing import Optional, Tuple
+from transformers.models.zamba2.modeling_zamba2 import Zamba2Config
+from attention_factory import Zamba2Attention
+
 class Zamba2MLP(nn.Module):
 
     def __init__(self, config: Zamba2Config,is_expert: bool = False, layer_idx=None, num_mem_blocks = None):
