@@ -33,7 +33,7 @@ docker-compose up --build
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/finetune-zamba2.git
+git clone https://github.com/s-smits/finetune-zamba2.git
 cd finetune-zamba2
 ```
 
